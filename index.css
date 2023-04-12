@@ -1,60 +1,73 @@
 /* In your CSS file */
-.hamburger-menu {
-  display: block;
-  position: relative;
-  width: 30px;
-  height: 20px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.hamburger-menu .bar {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #333;
-  transition: transform 0.2s ease-in-out;
-}
-
-.hamburger-menu .bar:nth-child(1) {
-  top: 0;
-}
-
-.hamburger-menu .bar:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.hamburger-menu .bar:nth-child(3) {
-  bottom: 0;
-}
-
-.hamburger-menu.open .bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.hamburger-menu.open .bar:nth-child(2) {
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.hamburger-menu.open .bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-.menu-items {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  background: #eee;
-}
-
-.hamburger-menu.open ~ .menu-items {
-  display: block;
-}
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hamburger-menu {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .bar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hamburger-menu .bar:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger-menu .bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .hamburger-menu .bar:nth-child(3) {
+    bottom: 0;
+  }
+  
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  .hamburger-menu.open .bar:nth-child(2) {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #eee;
+  }
+  
+  .hamburger-menu.open ~ .menu-items {
+    display: block;
+  }
+  
